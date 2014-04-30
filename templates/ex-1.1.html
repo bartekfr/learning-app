@@ -1,0 +1,25 @@
+﻿<section class="exercise gaps" >
+	<h1>{{title}}</h1>
+	<h2>{{instructions}}</h2>
+	<ul class="labels">
+		<li ng-repeat="item in exercises" class="labelItem {{item.correctAnswer}}"
+		ng-class="{ok: clear && item.answer === item.correctAnswer, checked: checked}">
+			<div class="input-holder" ng-class="{example: item.example }">
+				<span class="example-text" ng-show="item.example">Example</span>
+				<input type="text" ng-show="!item.example" ng-keypress="reset()" ng-model="item.answer"  custom-validation/>
+				<input type="text" disabled ng-model="item.correctAnswer" ng-show="item.example" custom-validation/>
+				<span class="result" ng-show="!item.example" ></span>
+			</div>
+		</li>
+	</ul>
+	<div class="words">
+		<span>{{exercises[5].correctAnswer}}</span>
+		<span>{{exercises[3].correctAnswer}}</span>
+		<span>{{exercises[2].correctAnswer}}</span>
+		<span>{{exercises[6].correctAnswer}}</span>
+		<span>{{exercises[1].correctAnswer}}</span>
+		<span>{{exercises[4].correctAnswer}}</span>
+	</div>
+	<span ng-class="{clear: clear, checker: true}" ng-click="check()">check</span>
+</section>
+

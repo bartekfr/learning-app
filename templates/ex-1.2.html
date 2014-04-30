@@ -1,0 +1,34 @@
+﻿<section class="exercise photo" >
+	<h1>{{title}}</h1>
+	<h2>{{instructions}}</h2>
+	<div class="images">
+		<div class="image">
+			<img src="images/pictures/exercise2/1.png" />
+		</div>
+		<div class="image">
+			<img src="images/pictures/exercise2/2.png" />
+		</div>
+		<div class="image">
+			<img src="images/pictures/exercise2/3.png" />
+		</div>
+		<div class="image">
+			<img src="images/pictures/exercise2/4.png" />
+		</div>
+		<div class="image">
+			<img src="images/pictures/exercise2/5.png" />
+		</div>
+		<div class="image">
+			<img src="images/pictures/exercise2/6.png" />
+		</div>
+	</div>
+	<ul class="labels">
+		<li ng-repeat="item in exercises" class="labelItem {{item.correctAnswer}}"
+		ng-class="{ok: clear && item.answer == item.correctAnswer || item.example, checked: checked, example: item.example }">
+				<span class="result" ></span>
+				<input type="text" ng-show="!item.example" ng-keypress="reset()" ng-model="item.answer"  custom-validation/>
+				<input type="text" disabled ng-model="item.correctAnswer" ng-show="item.example" custom-validation/>
+			<span class="label">{{item.label}}</span>
+		</li>
+	</ul>
+	<span ng-class="{clear: clear, checker: true}" ng-click="check()">check</span>
+</section>

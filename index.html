@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js ie6 ie6-8 ie6-7" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 ie6-8 ie6-7" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 ie6-8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en" ><!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<title>Dictionary app</title>
+<link href="css/css.css" rel="stylesheet" />
+<script type="text/javascript" src="js/angular.js"></script>
+<script type="text/javascript" src="js/angular-route.js"></script>
+<script type="text/javascript" src="js/services.js"></script>
+<script type="text/javascript" src="js/directives.js"></script>
+<script type="text/javascript" src="js/exercises.js"></script>
+</head>
+<body ng-app="exercisesApp">
+	<div class="main" ng-controller="main">
+		<div class="main-content" ng-view>
+		</div>
+		<pagination  current-exercise="exercisesData.currentExercise" all="exercisesData.allExercises" offset="3" ></pagination>
+	</div>
+
+</body>
+</html>
+
