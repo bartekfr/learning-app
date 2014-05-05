@@ -23,12 +23,12 @@
 	</div>
 	<ul class="labels">
 		<li ng-repeat="item in exercises" class="labelItem {{item.correctAnswer}}"
-		ng-class="{ok: clear && item.answer == item.correctAnswer || item.example, checked: checked, example: item.example }">
+		ng-class="{ok: checked && item.answer == item.correctAnswer || item.example, checked: checked, example: item.example }">
 				<span class="result" ></span>
 				<input type="text" ng-show="!item.example" ng-keypress="reset()" ng-model="item.answer"  custom-validation/>
 				<input type="text" disabled ng-model="item.correctAnswer" ng-show="item.example" custom-validation/>
 			<span class="label">{{item.label}}</span>
 		</li>
 	</ul>
-	<span ng-class="{clear: clear, checker: true}" ng-click="check()">check</span>
+	<span ng-class="{clear: checked, checker: true}" ng-click="check()">check</span>
 </section>

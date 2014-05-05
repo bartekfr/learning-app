@@ -10,7 +10,7 @@ angular.module('exercisesApp', ["ngRoute", "directives", "ngRoute", "exercisesDa
 		.otherwise({redirectTo: '/intro/1.0'});
 }])
 .controller('exercise', ['$scope', '$routeParams', 'exercises', function ($scope, $routeParams, exercises) {
-	$scope.clear = false;
+	$scope.checked = false;
 
 	/*normally such data are retrieved from AJAX request. In such case promise have to be used.
 	Assuming that exercises is promise returned from 'exercises' service, code below would look like this:
@@ -46,18 +46,15 @@ angular.module('exercisesApp', ["ngRoute", "directives", "ngRoute", "exercisesDa
 
 	//check and clear handler
 	$scope.check = function() {
-		$scope.checked = true;
-		if($scope.clear) {
-			$scope.checked = false;
+		if($scope.checked) {
 			angular.forEach($scope.exercises, function(val) {
 				val.answer = "";
 			});
 		}
-		$scope.clear = !$scope.clear;
+		$scope.checked = !$scope.checked;
 	};
 	$scope.reset = function() {
 		$scope.checked = false;
-		$scope.clear = false;
 	};
 }])
 .controller('main', ['$scope', function ($scope) {
