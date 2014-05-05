@@ -8,13 +8,13 @@ angular.module("directives", [])
 			offset: '@'
 		},
 		template:
-		'<div class="pagination">' +
+		'<nav class="pagination">' +
 			'<ul class="pagination-list">' +
 				'<li ng-class="{disabled: noPrevious(), prev: true, nav: true}"><a href ng-click="selectPrevious()">Previous</a></li>' +
 				'<li ng-class="{disabled: noNext(), next: true, nav: true}"><a href ng-click="selectNext()">Next</a></li>' +
 				'<li ng-repeat="ex in all" ng-show="show($index)" ng-class="{active: isActive($index), block: ex.intro}"><a href ng-click="setPage($index)">{{ex.block}}</a></li>' +
 			'</ul>' +
-		'</div>',
+		'</nav>',
 		replace: true,
 		link: function($scope) {
 			$scope.$watch('all', function(value) {

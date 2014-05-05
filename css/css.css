@@ -78,49 +78,50 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   font-family: Arial, sans-serif;
   font-size: 14px;
+  padding-bottom: 100px;
 }
 
-/* line 20, ../sass/css.scss */
+/* line 21, ../sass/css.scss */
 h1 {
   font-size: 26px;
   color: #4654ab;
   margin-bottom: 15px;
 }
 
-/* line 25, ../sass/css.scss */
+/* line 26, ../sass/css.scss */
 h2 {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-/* line 30, ../sass/css.scss */
+/* line 31, ../sass/css.scss */
 h1, h2 {
   font-weight: bold;
 }
 
-/* line 34, ../sass/css.scss */
+/* line 35, ../sass/css.scss */
 .main {
   width: 960px;
-  margin: auto;
   height: 550px;
+  margin: auto;
   background: #f6f5f5;
   position: relative;
 }
 
-/* line 42, ../sass/css.scss */
+/* line 43, ../sass/css.scss */
 .main-content {
   width: 780px;
   padding-bottom: 50px;
   margin: auto;
 }
 
-/* line 49, ../sass/css.scss */
+/* line 50, ../sass/css.scss */
 .exercise {
   padding-top: 10px;
   position: relative;
 }
 
-/* line 54, ../sass/css.scss */
+/* line 55, ../sass/css.scss */
 .checker {
   cursor: pointer;
   position: absolute;
@@ -132,18 +133,18 @@ h1, h2 {
   text-indent: -9999px;
   background: #2f9ec8 url("../images/icons/tick_white.png") no-repeat center center;
 }
-/* line 65, ../sass/css.scss */
+/* line 66, ../sass/css.scss */
 .checker.clear {
   background-image: url("../images/icons/refresh_white.png");
 }
 
 /*exercise 1*/
-/* line 73, ../sass/css.scss */
+/* line 74, ../sass/css.scss */
 .labels {
   counter-reset: section;
   padding: 10px 0 20px;
 }
-/* line 78, ../sass/css.scss */
+/* line 79, ../sass/css.scss */
 .labels .labelItem {
   float: left;
   position: relative;
@@ -156,78 +157,78 @@ h1, h2 {
   padding-top: 140px;
   background: url("../images/pictures/exercise1/cloudy.png") no-repeat top center;
 }
-/* line 87, ../sass/css.scss */
+/* line 88, ../sass/css.scss */
 .labels .labelItem.cloudy {
   background-image: url("../images/pictures/exercise1/cloudy.png");
 }
-/* line 90, ../sass/css.scss */
+/* line 91, ../sass/css.scss */
 .labels .labelItem.sunny {
   background-image: url("../images/pictures/exercise1/sunny.png");
 }
-/* line 93, ../sass/css.scss */
+/* line 94, ../sass/css.scss */
 .labels .labelItem.raining {
   background-image: url("../images/pictures/exercise1/raining.png");
 }
-/* line 96, ../sass/css.scss */
+/* line 97, ../sass/css.scss */
 .labels .labelItem.foggy {
   background-image: url("../images/pictures/exercise1/foggy.png");
 }
-/* line 99, ../sass/css.scss */
+/* line 100, ../sass/css.scss */
 .labels .labelItem.windy {
   background-image: url("../images/pictures/exercise1/windy.png");
 }
-/* line 102, ../sass/css.scss */
+/* line 103, ../sass/css.scss */
 .labels .labelItem.snowing {
   background-image: url("../images/pictures/exercise1/snowing.png");
 }
-/* line 105, ../sass/css.scss */
+/* line 106, ../sass/css.scss */
 .labels .labelItem .result {
   float: left;
   width: 25px;
   height: 25px;
 }
-/* line 111, ../sass/css.scss */
+/* line 112, ../sass/css.scss */
 .labels .labelItem.checked .result {
   background: url("../images/icons/wrong.png") no-repeat center center;
 }
-/* line 114, ../sass/css.scss */
+/* line 115, ../sass/css.scss */
 .labels .labelItem.checked.ok .result {
   display: inline-block;
   background-image: url("../images/icons/ok.png");
 }
-/* line 118, ../sass/css.scss */
+/* line 119, ../sass/css.scss */
 .labels .labelItem input {
   float: left;
   margin: 2px 10px 0 15px;
 }
-/* line 124, ../sass/css.scss */
+/* line 125, ../sass/css.scss */
 .labels .input-holder {
   padding: 5px 5px 10px 5px;
 }
-/* line 128, ../sass/css.scss */
+/* line 129, ../sass/css.scss */
 .labels .example {
   margin-top: -15px;
   background: #ddd;
 }
-/* line 131, ../sass/css.scss */
+/* line 132, ../sass/css.scss */
 .labels .example .example-text {
   display: block;
   clear: both;
 }
 
-/* line 138, ../sass/css.scss */
+/* line 139, ../sass/css.scss */
 .words {
   background: #e6eaee;
   border: 1px solid #dcdcf5;
   padding: 10px 5px;
   text-align: center;
 }
-/* line 143, ../sass/css.scss */
+/* line 144, ../sass/css.scss */
 .words span {
   margin: 0 10px;
 }
 
-/* line 148, ../sass/css.scss */
+/* line 149, ../sass/css.scss */
 .gaps .labelItem:before {
   position: absolute;
   bottom: 30px;
@@ -238,39 +239,39 @@ h1, h2 {
   /* Display the counter */
 }
 
-/* line 158, ../sass/css.scss */
+/* line 159, ../sass/css.scss */
 .photo .labelItem {
   width: 230px;
   height: auto;
   padding: 0;
   background: none;
 }
-/* line 163, ../sass/css.scss */
+/* line 164, ../sass/css.scss */
 .photo .labelItem input {
   width: 30px;
   margin: 2px 10px 0 5px;
   text-align: center;
 }
-/* line 168, ../sass/css.scss */
+/* line 169, ../sass/css.scss */
 .photo .labelItem.example {
   margin-top: 0;
 }
-/* line 171, ../sass/css.scss */
+/* line 172, ../sass/css.scss */
 .photo .labelItem .label {
   float: left;
   line-height: 20px;
 }
-/* line 175, ../sass/css.scss */
+/* line 176, ../sass/css.scss */
 .photo .labelItem .result {
   float: left;
 }
-/* line 180, ../sass/css.scss */
+/* line 181, ../sass/css.scss */
 .photo .images {
   width: 600px;
   margin: 40px auto;
   counter-reset: images;
 }
-/* line 185, ../sass/css.scss */
+/* line 186, ../sass/css.scss */
 .photo .images .image {
   position: relative;
   float: left;
@@ -279,7 +280,7 @@ h1, h2 {
   border: 5px solid #fff;
   box-shadow: 0 0 8px #aaa;
 }
-/* line 193, ../sass/css.scss */
+/* line 194, ../sass/css.scss */
 .photo .images .image:before {
   counter-increment: images;
   /* Increment the section counter */
@@ -293,7 +294,7 @@ h1, h2 {
   background: #fff;
   text-align: center;
 }
-/* line 205, ../sass/css.scss */
+/* line 206, ../sass/css.scss */
 .photo .images .image:nth-child(odd) {
   -webkit-transform: rotate(-5deg) scale(1.1);
   -moz-transform: rotate(-5deg) scale(1.1);
@@ -301,7 +302,7 @@ h1, h2 {
   -o-transform: rotate(-5deg) scale(1.1);
   transform: rotate(-5deg) scale(1.1);
 }
-/* line 208, ../sass/css.scss */
+/* line 209, ../sass/css.scss */
 .photo .images .image:nth-child(even) {
   -webkit-transform: rotate(5deg) scale(1.1);
   -moz-transform: rotate(5deg) scale(1.1);
@@ -309,7 +310,7 @@ h1, h2 {
   -o-transform: rotate(5deg) scale(1.1);
   transform: rotate(5deg) scale(1.1);
 }
-/* line 211, ../sass/css.scss */
+/* line 212, ../sass/css.scss */
 .photo .images .image:nth-child(5) {
   -webkit-transform: rotate(-13deg) translateY(-20px) scale(1.1);
   -moz-transform: rotate(-13deg) translateY(-20px) scale(1.1);
@@ -319,7 +320,7 @@ h1, h2 {
 }
 
 /*Pagination*/
-/* line 219, ../sass/css.scss */
+/* line 220, ../sass/css.scss */
 .pagination {
   position: absolute;
   bottom: -90px;
@@ -327,7 +328,7 @@ h1, h2 {
   right: 0;
   padding-left: 40px;
 }
-/* line 225, ../sass/css.scss */
+/* line 226, ../sass/css.scss */
 .pagination:before {
   content: "";
   display: block;
@@ -339,14 +340,14 @@ h1, h2 {
   background: #2f9ec8;
   z-index: 0;
 }
-/* line 236, ../sass/css.scss */
+/* line 237, ../sass/css.scss */
 .pagination li {
   float: left;
   margin: 30px;
   position: relative;
   z-index: 10;
 }
-/* line 241, ../sass/css.scss */
+/* line 242, ../sass/css.scss */
 .pagination li a {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -362,13 +363,13 @@ h1, h2 {
   border: 2px solid #2f9ec8;
   transition: background-color .5s, border-color .5s;
 }
-/* line 255, ../sass/css.scss */
+/* line 256, ../sass/css.scss */
 .pagination li.active a {
   background: #4654ab;
   border-color: #4654ab;
   color: #fff;
 }
-/* line 260, ../sass/css.scss */
+/* line 261, ../sass/css.scss */
 .pagination li.active:not(.block):after {
   content: "";
   display: block;
@@ -380,11 +381,11 @@ h1, h2 {
   margin-left: -8px;
   background: url("../images/icons/marker.png") no-repeat center center;
 }
-/* line 273, ../sass/css.scss */
+/* line 274, ../sass/css.scss */
 .pagination li.block, .pagination li.nav {
   margin-top: 33px;
 }
-/* line 275, ../sass/css.scss */
+/* line 276, ../sass/css.scss */
 .pagination li.block a, .pagination li.nav a {
   width: 36px;
   height: 36px;
@@ -393,26 +394,31 @@ h1, h2 {
   border-radius: 18px;
   text-indent: 0;
   text-align: center;
-  line-height: 33px;
+  line-height: 32px;
   text-decoration: none;
 }
-/* line 288, ../sass/css.scss */
+/* line 289, ../sass/css.scss */
 .pagination li.nav {
   margin-left: 5px;
   margin-right: 5px;
 }
-/* line 293, ../sass/css.scss */
+/* line 294, ../sass/css.scss */
 .pagination li.nav a {
   text-indent: -99999px;
   background: #2f9ec8 url("../images/icons/arrow_left_white.png") no-repeat 7px center;
 }
-/* line 296, ../sass/css.scss */
+/* line 297, ../sass/css.scss */
 .pagination li.nav a:hover {
   background-color: #4654ab;
   border-color: #4654ab;
 }
-/* line 301, ../sass/css.scss */
+/* line 302, ../sass/css.scss */
 .pagination li.nav.next a {
   background-image: url("../images/icons/arrow_right_white.png");
   background-position: 11px center;
+}
+/* line 306, ../sass/css.scss */
+.pagination li.nav.disabled a {
+  background-color: #eee;
+  border-color: #eee;
 }

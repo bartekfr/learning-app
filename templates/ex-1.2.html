@@ -1,26 +1,26 @@
 ﻿<section class="exercise photo" >
 	<h1>{{title}}</h1>
 	<h2>{{instructions}}</h2>
-	<div class="images">
-		<div class="image">
+	<ul class="images">
+		<li class="image">
 			<img src="images/pictures/exercise2/1.png" />
-		</div>
-		<div class="image">
+		</li>
+		<li class="image">
 			<img src="images/pictures/exercise2/2.png" />
-		</div>
-		<div class="image">
+		</li>
+		<li class="image">
 			<img src="images/pictures/exercise2/3.png" />
-		</div>
-		<div class="image">
+		</li>
+		<li class="image">
 			<img src="images/pictures/exercise2/4.png" />
-		</div>
-		<div class="image">
+		</li>
+		<li class="image">
 			<img src="images/pictures/exercise2/5.png" />
-		</div>
-		<div class="image">
+		</li>
+		<li class="image">
 			<img src="images/pictures/exercise2/6.png" />
-		</div>
-	</div>
+		</li>
+	</ul>
 	<ul class="labels">
 		<li ng-repeat="item in exercises" class="labelItem {{item.correctAnswer}}"
 		ng-class="{ok: checked && item.answer == item.correctAnswer || item.example, checked: checked, example: item.example }">

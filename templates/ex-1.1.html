@@ -6,7 +6,7 @@
 		ng-class="{ok: checked && item.answer === item.correctAnswer, checked: checked}">
 			<div class="input-holder" ng-class="{example: item.example }">
 				<span class="example-text" ng-show="item.example">Example</span>
-				<input type="text" ng-show="!item.example" ng-keypress="reset()" ng-model="item.answer"  custom-validation/>
+				<input type="text" ng-show="!item.example" ng-keypress="reset()" ng-model="item.answer" custom-validation/>
 				<input type="text" disabled ng-model="item.correctAnswer" ng-show="item.example" custom-validation/>
 				<span class="result" ng-show="!item.example" ></span>
 			</div>
